@@ -286,7 +286,7 @@ a#phone_top:before {
 }
 
 #logo {
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 header {
@@ -2068,7 +2068,7 @@ input#website {
 #toTop {
 	width: 40px;
 	height: 40px;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 37, 74, 0.75);
 	text-align: center;
 	padding: 10px;
 	line-height: 20px;
@@ -2834,4 +2834,55 @@ body#confirmation {
 	width: 200px;
 	height: 250px;
 	text-align: center;
+}
+
+.widgets {
+	position: fixed;
+	display: flex;
+	gap: 16px;
+	bottom: 60px;
+	right: 7px;
+	flex-direction: column;
+	gap: 8px;
+	z-index: 999;
+}
+
+.widgets a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	color: white;
+	background-color: #00254a;
+	box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.widgets a img {
+	max-height: 30px;
+	animation: shake 1.25s infinite ease-in-out 1s;
+	animation-delay: 3s;
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: rotate(10deg);
+	}
+
+	75% {
+		transform: rotate(-5deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
 }

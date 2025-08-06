@@ -72,7 +72,7 @@
 			<div class="row">
 				<div class="col-xs-3">
 					<div id="logo">
-						<a href="index.html"><img src="img/logo.png" width="175" height="35" alt="Electrician"></a>
+						<a href="index.html"><img src="img/logo.png" width="80" height="80" alt="Electrician"></a>
 					</div>
 				</div>
 				<nav class="col-xs-9">
@@ -80,7 +80,7 @@
 							mobile</span></a>
 					<div class="main-menu">
 						<div id="header_menu">
-							<img src="img/logo.png" width="175" height="35" alt="Electrician">
+							<img src="img/logo.png" width="160" height="160" alt="Electrician">
 						</div>
 						<a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
 						<ul>
@@ -130,19 +130,19 @@
 					<hr>
 
 					<div id="message-contact"></div>
-					<form method="post" action="assets/contact.php" id="contactform">
+					<form action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="e07fe5ee-3358-46ac-9b43-d08c89e2946e">
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<label>First name</label>
-									<input type="text" class="form-control" id="name_contact" name="name_contact">
+									<input type="text" class="form-control" id="name_contact" name="first_name">
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<label>Last name</label>
-									<input type="text" class="form-control" id="lastname_contact"
-										name="lastname_contact">
+									<input type="text" class="form-control" id="last_name" name="lastname_contact">
 								</div>
 							</div>
 						</div>
@@ -150,13 +150,13 @@
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<label>Email</label>
-									<input type="email" id="email_contact" name="email_contact" class="form-control">
+									<input type="email" id="email_contact" name="email" class="form-control">
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
-									<label>Phone number</label>
-									<input type="text" id="phone_contact" name="phone_contact" class="form-control">
+									<label>Mobile number</label>
+									<input type="text" id="phone_contact" name="mobile" class="form-control">
 								</div>
 							</div>
 						</div>
@@ -164,17 +164,13 @@
 							<div class="col-md-12">
 								<div class="form-group">
 									<label>Your message</label>
-									<textarea rows="5" id="message_contact" name="message_contact" class="form-control"
+									<textarea rows="5" id="message_contact" name="message" class="form-control"
 										style="height:100px;"></textarea>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<div class="form-group">
-									<label>Are you human? 3 + 1 =</label>
-									<input type="text" id="verify_contact" class=" form-control">
-								</div>
 								<input type="submit" value="Submit" class="btn_1 green medium add_bottom_30"
 									id="submit-contact" />
 							</div>
@@ -211,7 +207,7 @@
 		<div class="container">
 			<div class="row ">
 				<div class="col-md-4 col-sm-6">
-					<img src="img/logo-footer.png" width="175" height="35" alt="Electrician" id="logo_footer">
+					<img src="img/logo-footer.png" width="160" height="160" alt="Electrician" id="logo_footer">
 					<p>We offers fridge, washing machine, and microwave oven repairs at your doorstep.
 						With expert technicians, same-day service, and genuine parts, we provide quick, affordable, and
 						reliable appliance repair services.</p>
@@ -256,6 +252,15 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="widgets">
+		<a href="tel:+919289405750">
+			<img src="./img/phone.svg" alt="phone">
+		</a>
+		<a href="https://wa.me/919811649407">
+			<img src="./img/whatsapp.svg" alt="whatsapp">
+		</a>
+	</div>
 
 	<div id="toTop"></div>
 
