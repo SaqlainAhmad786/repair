@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cgi-bin/
+
+# Allow everything else
+Allow: /
+
+# Sitemap
+Sitemap: https://fridgerepairsservices.com/sitemap.xml
