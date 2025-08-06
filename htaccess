@@ -1,0 +1,13 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Make sure this is the root .htaccess
+RewriteBase /
+
+# Redirect requests with .html to without .html (301 permanent redirect)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Internally rewrite requests without .html to the actual .html files
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]

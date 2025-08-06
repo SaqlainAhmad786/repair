@@ -1338,7 +1338,7 @@ video {
 #booking_container {
 	position: relative;
 	height: 650px;
-	padding-top: 130px;
+	padding-top: 144px;
 	background: #ccc url(../img/slide_hero.jpg) no-repeat center top;
 	background-size: cover;
 	color: #fff;
@@ -2885,4 +2885,42 @@ body#confirmation {
 	100% {
 		transform: rotate(0deg);
 	}
+}
+
+.hero-top-text {
+	margin: 0 !important;
+	font-size: 14px !important;
+	font-weight: 600;
+}
+
+.hero-main-text {
+	margin-top: 10px !important;
+}
+
+@media (max-width: 768px) {
+	.hero-main-text {
+		margin-top: 6px !important;
+	}
+}
+
+@media (max-width: 568px) {
+	.hero-top-text {
+		font-size: 12px !important;
+	}
+}
+
+#heroMarquee {
+	background: rgba(0, 37, 74, 0.75);
+	color: white;
+	padding: 8px;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	margin-bottom: 16px;
+}
+
+.gradientText{
+	background: -webkit-linear-gradient(yellow, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
